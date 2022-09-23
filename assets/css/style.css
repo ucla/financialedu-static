@@ -1,0 +1,104 @@
+/* 
+    Overrides of Web Components Library CSS and associated Bootstrap 4.0
+    and Financial Edu page specific CSS
+
+    Mobile first
+*/
+
+#header {
+    border-bottom: 1px solid #ccc;
+}
+
+.header--top-border {
+    height: 10px;
+}
+
+.header-logo {
+    background-color: unset;
+    max-height: 64px;
+    height: 125px;
+    display: flex;
+}
+
+.header-logo__wrap {
+    margin: 0;
+}
+
+.header-logo__wrap a {
+    height: 34px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo__image {
+    height: 17px;
+    width: 52px;
+    margin: 0;
+}
+
+.footer__dept--logo-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.footer__dept--logo {
+    height: 21px;
+    width: 65px;
+    margin: 0px;
+}
+
+.footer__dept--deptname-large {
+    display: none;
+}
+
+.footer__dept--deptname {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0px;
+    margin-left: .5rem
+}
+
+
+.ucla .footer__dept--social-facebook:hover, 
+.ucla .footer__dept--social-twitter:hover,
+.ucla .footer__dept--social-instagram:hover,
+.ucla .footer__dept--social-snapchat:hover,
+.ucla .footer__dept--social-linkedin:hover,
+.ucla .footer__dept--social-youtube:hover,
+.ucla .footer__dept--social-tiktok:hover {
+    background-color: #ffe500;
+}
+
+
+
+
+@media (min-width: 480px ) {
+    /* all devices wider than 480px */
+    .header-logo {
+        height: 125px;
+        max-height: 125px;
+    }
+    .header-logo__wrap a {
+        height: 57px;
+        width: 123px;
+    }
+ 
+    .header-logo__image {
+        height: 28px;
+        width: 86px;
+    }
+    .footer__dept--deptname-small {
+        display: none;
+    }
+    .footer__dept--deptname-large {
+        display: inline;
+        margin-left: .625rem ;
+
+    }
+}
+
+
