@@ -38,10 +38,15 @@
     margin: 0;
 }
 
+.footer__dept {
+    padding-bottom: 6.875rem
+}
+
+
 .footer__dept--logo-wrapper {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .footer__dept--logo {
@@ -73,7 +78,9 @@
     background-color: #ffe500;
 }
 
-
+.footer__dept--contact * {
+    font-size: inherit;
+}
 
 
 @media (min-width: 480px ) {
@@ -81,6 +88,8 @@
     .header-logo {
         height: 125px;
         max-height: 125px;
+        max-width: 1176px;
+        margin: 0 auto;
     }
     .header-logo__wrap a {
         height: 57px;
@@ -91,6 +100,12 @@
         height: 28px;
         width: 86px;
     }
+
+    .footer__dept--wrapper {
+        max-width: 1176px;
+        margin: 0 auto;
+    }
+
     .footer__dept--deptname-small {
         display: none;
     }
