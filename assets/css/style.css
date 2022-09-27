@@ -5,26 +5,29 @@
     Mobile first
 */
 
-#header {
-    border-bottom: 1px solid #ccc;
+.ucla.campus {
+    box-sizing: border-box;
 }
+
+#header { border: none; }
 
 .header--top-border {
     height: 10px;
 }
 
-.header-logo {
+.ucla.campus.header-logo {
     background-color: unset;
-    max-height: 64px;
-    height: 125px;
+    height: 4rem;
+    max-height: 4rem;
     display: flex;
+    padding-top: 1rem;
+    margin: 0 auto;
 }
 
-.header-logo__wrap {
-    margin: 0;
+.header-logo__linkwrap {
 }
 
-.header-logo__wrap a {
+.header-logo__linkwrap a {
     height: 34px;
     width: 74px;
     display: flex;
@@ -36,6 +39,18 @@
     height: 17px;
     width: 52px;
     margin: 0;
+}
+
+.header-logo__bottom-border {
+    height: 1px;
+}
+
+.header-wrap {
+    padding: 0;
+}
+
+.ucla.campus.footer__dept-inner-wrapper {
+    padding: 0;
 }
 
 .footer__dept {
@@ -82,16 +97,20 @@
     font-size: inherit;
 }
 
+.ucla.campus.global-foot {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 @media (min-width: 480px ) {
     /* all devices wider than 480px */
-    .header-logo {
+    .ucla.campus.header-logo {
         height: 125px;
         max-height: 125px;
-        max-width: 1176px;
-        margin: 0 auto;
+        padding-top: 2rem;
     }
-    .header-logo__wrap a {
+
+    .header-logo__linkwrap a {
         height: 57px;
         width: 123px;
     }
@@ -101,11 +120,15 @@
         width: 86px;
     }
 
-    .footer__dept--wrapper {
-        max-width: 1176px;
-        margin: 0 auto;
-    }
 
+    .ucla.campus.footer__dept-inner-wrapper {
+        padding: 0 12px;
+    }
+    
+    .footer__dept {
+        padding: 24px 0;
+    }
+    
     .footer__dept--deptname-small {
         display: none;
     }
