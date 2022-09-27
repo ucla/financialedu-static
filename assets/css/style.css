@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 
-#header { border: none; }
+#header {
+    border: none;
+}
 
 .header--top-border {
     height: 10px;
@@ -22,9 +24,6 @@
     display: flex;
     padding-top: 1rem;
     margin: 0 auto;
-}
-
-.header-logo__linkwrap {
 }
 
 .header-logo__linkwrap a {
@@ -45,9 +44,46 @@
     height: 1px;
 }
 
+p.lead {
+    font-size: 1.25rem;
+    line-height: 1.20;
+}
+
 .header-wrap {
     padding: 0;
 }
+
+.hero__wrapper {
+    height: 268px;
+}
+
+.hero__image {
+    background: center / cover url('../images/banner_los_angeles.jpg') no-repeat;
+    height: 100%;
+}
+
+.icons-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-header__icons {
+    min-width: 163px;
+    height: 163px;
+    background: url('../images/icons_fin_edu.svg') no-repeat
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ucla.campus.footer__dept-inner-wrapper {
     padding: 0;
@@ -83,7 +119,7 @@
 }
 
 
-.ucla .footer__dept--social-facebook:hover, 
+.ucla .footer__dept--social-facebook:hover,
 .ucla .footer__dept--social-twitter:hover,
 .ucla .footer__dept--social-instagram:hover,
 .ucla .footer__dept--social-snapchat:hover,
@@ -102,8 +138,10 @@
     padding-bottom: 32px;
 }
 
-@media (min-width: 480px ) {
+@media (min-width: 480px) {
     /* all devices wider than 480px */
+
+
     .ucla.campus.header-logo {
         height: 125px;
         max-height: 125px;
@@ -114,29 +152,36 @@
         height: 57px;
         width: 123px;
     }
- 
+
     .header-logo__image {
         height: 28px;
         width: 86px;
+    }
+
+    .hero__wrapper {
+        height: 459px;
+    }
+
+    .icons-header {
+        flex-direction: row;
     }
 
 
     .ucla.campus.footer__dept-inner-wrapper {
         padding: 0 12px;
     }
-    
+
     .footer__dept {
         padding: 24px 0;
     }
-    
+
     .footer__dept--deptname-small {
         display: none;
     }
+
     .footer__dept--deptname-large {
         display: inline;
-        margin-left: .625rem ;
+        margin-left: .625rem;
 
     }
 }
-
-
