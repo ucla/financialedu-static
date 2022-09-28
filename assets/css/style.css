@@ -85,11 +85,48 @@ p.lead {
     background-repeat: no-repeat;
 }
 
+
+
 .card-service--collections .card-service__image {
     background-image: url('../images/bg_collections.png');
 }
 
+.card-service--loan-services .card-service__image {
+    background-image: url('../images/bg_loan_services.png');
+}
 
+.card-service--fin-wellness .card-service__image {
+    background-image: url('../images/bg_fin_wellness.png');
+}
+
+.card-service--crisis-team .card-service__image {
+    background-image: url('../images/bg_crisis_team.png');
+}
+
+.card-service__icon {
+    width: 75px;
+    height: 75px;
+}
+
+.card-service--collections .card-service__icon {
+    background-image: url('../images/icons_fin_edu.svg');
+    background-position-y: 75px;
+}
+
+.card-service--loan-services .card-service__icon {
+    background-image: url('../images/icons_fin_edu.svg');
+}
+
+.card-service--fin-wellness .card-service__icon {
+    background-image: url('../images/icons_fin_edu.svg');
+    background-position-x: 75px;
+}
+
+.card-service--crisis-team .card-service__icon {
+    background-image: url('../images/icons_fin_edu.svg');
+    background-position: 75px 75px;
+
+}
 
 /* <div class="card-service--collections">
 <div class="card-service__image"></div>
