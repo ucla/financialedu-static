@@ -128,10 +128,9 @@ p.lead {
 }
 
 
-
-
-.ucla.campus.footer__dept-inner-wrapper {
-    padding: 0;
+.footer__dept,
+.footer__global {
+    padding: 32px 0;
 }
 
 .footer__dept {
