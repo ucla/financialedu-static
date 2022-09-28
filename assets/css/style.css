@@ -221,7 +221,6 @@ p.lead {
         align-self: center;
     }
 
-
     .icons-header {
         flex-direction: row;
     }
@@ -232,13 +231,6 @@ p.lead {
         margin-right: auto;
     }
 
-    .card-services>div:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
-
-    .card-service {
-        flex-direction: row;
-    }
 
     .related-links__outer-wrapper {
         display: flex;
@@ -250,10 +242,6 @@ p.lead {
         max-width: 575px;
         align-items: flex-start;
 
-    }
-
-    .ucla.campus.footer__dept-inner-wrapper {
-        padding: 0 12px;
     }
 
     .footer__dept {
@@ -268,5 +256,34 @@ p.lead {
         display: inline;
         margin-left: .625rem;
 
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+    .card-service__image {
+        height: 422px;
+    }
+}
+
+@media (min-width: 760px) {
+    /* all devices wider than 760px */
+
+    .card-services>div:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .card-service {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .card-service__image {
+        height: 422px;
+        flex-basis: calc(50% - 2%);
+    }
+
+    .card-service__info-wrapper {
+        flex-basis: calc(50% - 2%);
     }
 }
