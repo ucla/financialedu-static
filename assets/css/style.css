@@ -73,8 +73,20 @@ p.lead {
     background: url('../images/icons_fin_edu.svg') no-repeat
 }
 
-.card-service--collections {
+.card-service {
     display: flex;
+    flex-direction: column;
+}
+
+.card-service__image {
+    width: 100%;
+    height: 205px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-service--collections .card-service__image {
+    background-image: url('../images/bg_collections.png');
 }
 
 
@@ -193,7 +205,11 @@ p.lead {
         margin-right: auto;
     }
 
-    .card-service--collections {
+    .card-services>div:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .card-service {
         flex-direction: row;
     }
 
