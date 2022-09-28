@@ -44,23 +44,23 @@
     height: 1px;
 }
 
+
+.header-text {
+    padding: 0;
+}
+
+
 p.lead {
     font-size: 1.25rem;
     line-height: 1.20;
 }
 
-.header-wrap {
-    padding: 0;
-}
 
-.hero__wrapper {
+.banner-hero__image {
+    background: center / cover url('../images/banner_los_angeles.jpg') no-repeat;
     height: 268px;
 }
 
-.hero__image {
-    background: center / cover url('../images/banner_los_angeles.jpg') no-repeat;
-    height: 100%;
-}
 
 .icons-header {
     display: flex;
@@ -73,10 +73,16 @@ p.lead {
     background: url('../images/icons_fin_edu.svg') no-repeat
 }
 
+.card-service--collections {
+    display: flex;
+}
 
 
 
-
+/* <div class="card-service--collections">
+<div class="card-service__image"></div>
+<div class="card-service__info-wrapper">
+<div class="card-service__icon"></div> */
 
 
 
@@ -158,14 +164,38 @@ p.lead {
         width: 86px;
     }
 
-    .hero__wrapper {
+    .header-text__wrapper {
+        max-width: 876px;
+    }
+
+    .banner-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-hero__image {
         height: 459px;
     }
+
+    .banner-hero__text {
+        max-width: 771px;
+        align-self: center;
+    }
+
 
     .icons-header {
         flex-direction: row;
     }
 
+    .banner-blue__text {
+        max-width: 771px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-service--collections {
+        flex-direction: row;
+    }
 
     .ucla.campus.footer__dept-inner-wrapper {
         padding: 0 12px;
