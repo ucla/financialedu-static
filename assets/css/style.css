@@ -5,6 +5,11 @@
     Mobile first
 */
 
+h1 {
+    /* override web components font size to match design. This might change in refresh */
+    font-size: 1.75rem;
+}
+
 .ucla.campus {
     box-sizing: border-box;
 }
@@ -16,6 +21,7 @@
 .header--top-border {
     height: 10px;
 }
+
 
 .ucla.campus.header-logo {
     background-color: unset;
@@ -185,6 +191,10 @@ p.lead {
 @media (min-width: 480px) {
     /* all devices wider than 480px */
 
+    h1 {
+        /* override web components font size to match design. This might change in refresh */
+        font-size: 2.25rem;
+    }
 
     .ucla.campus.header-logo {
         height: 125px;
